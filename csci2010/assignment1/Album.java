@@ -19,8 +19,37 @@ public class Album {
     public String getArtist() {
         return artist;
     }
-    public int getTracklist() {
+    public int getNumTracks() {
         return tracklist.length;
     }
+
+    public Song getTrack(int track){
+        if (track<= this.tracklist.length && track > 0) {
+            return this.tracklist[track-1];
+        }else{
+            return null;
+        }
+    }
     
+    public boolean comesBefore(Album other){
+        if(this.artist.equalsIgnoreCase(other.getArtist())){
+            if (this.title.equalsIgnoreCase(other.getTitle())) {
+                return false;
+            }
+            if (this.title.compareToIgnoreCase(other.getTitle())>0) {
+                return false;
+            }else return true;
+        }if (this.artist.compareToIgnoreCase(other.getArtist())>0) {
+            return false;
+        }else return true;
+
+    }
+
+    public void displayAlbum(){
+        if(tracklist.length== 1){
+            System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "track)");
+        }else System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "tracks)");
+        
+    }
+
 }
