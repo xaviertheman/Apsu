@@ -1,4 +1,4 @@
-package csci2010.day02I03I26;
+package csci2010.classes.day02I03I26;
 
 public class Student extends Person {
     private int studentNumber;
