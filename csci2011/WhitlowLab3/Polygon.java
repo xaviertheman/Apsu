@@ -3,7 +3,7 @@ package csci2011.WhitlowLab3;
 public class Polygon {
     private int numSides;
 
-    public Polygon(int numSides) throws ArithmeticException{
+    public Polygon(int numSides){
         if(numSides< 3){
             throw new ArithmeticException("num of sides must be > 3");
         }else{

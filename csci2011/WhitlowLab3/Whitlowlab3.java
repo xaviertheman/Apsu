@@ -5,6 +5,29 @@ public class Whitlowlab3 {
         Polygon myFirsytPolygon = new Polygon(4);
         System.out.println("Testing Polygon constructor");
         System.out.println(myFirsytPolygon);
-        
+        System.out.println();
+
+        RegularPolygon myfirstRegularPolygon = new RegularPolygon(4, 4);
+        System.out.println("Testing RegularPolygon constructor");
+        System.out.println(myfirstRegularPolygon);
+        System.out.println();
+        System.out.println("Testing side length mutator");
+        myfirstRegularPolygon.setSideLength(7);
+        System.out.println(myfirstRegularPolygon);
+        System.out.println();
+
+        System.out.println("Testing RegularTriangle constructor");
+        RegularTriangle myfirstRegularTriangle = new RegularTriangle(4);
+        System.out.println(myfirstRegularTriangle);
+        System.out.println();
+
+        System.out.println("Testing height mutator");
+        myfirstRegularTriangle.setHeight(3);
+        System.out.println(myfirstRegularTriangle);
+        System.out.println();
+
+        System.out.println("Testing side length mutator");
+        myfirstRegularTriangle.setSideLength(4);
+        System.out.println(myfirstRegularTriangle);
     }
 }
