@@ -1,6 +1,11 @@
 package csci2011.WhitlowLab3;
 
 public class Polygon {
+/**
+ *CSCI 2011 Lab 3
+ * @ xavier whitlow
+ * Course: CSCI 2011 – Lab  3
+ */
     private int numSides;
 
     public Polygon(int numSides){

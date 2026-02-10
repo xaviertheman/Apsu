@@ -1,6 +1,11 @@
 package csci2011.WhitlowLab3;
 
 public class Whitlowlab3 {
+/**
+ *CSCI 2011 Lab 3
+ * @ xavier whitlow
+ * Course: CSCI 2011 – Lab  3
+ */
     public static void main(String[] args) {
         Polygon myFirsytPolygon = new Polygon(4);
         System.out.println("Testing Polygon constructor");

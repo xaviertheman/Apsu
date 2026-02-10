@@ -1,6 +1,11 @@
 package csci2011.WhitlowLab3;
 
 public class RegularPolygon extends Polygon{
+/**
+ *CSCI 2011 Lab 3
+ * @ xavier whitlow
+ * Course: CSCI 2011 – Lab  3
+ */
     private double sideLength;
 
     public RegularPolygon(int numSides, double sideLength){
