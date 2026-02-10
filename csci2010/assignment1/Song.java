@@ -1,6 +1,12 @@
 package csci2010.assignment1;
 
 public class Song {
+/**
+ *CSCI 2010 assignment 1
+ * @ xavier whitlow
+ * Course: CSCI 1011 – Assignment  1
+ */
+
     private String title;
     private String artist;
     private int length; // in seconds
@@ -36,7 +42,7 @@ public class Song {
     }
 
     public void display(){
-        System.out.printf(this.title + " - "+ this.artist + "(%02d:%02d", this.length,this.length%60);
+        System.out.printf(this.title + " - "+ this.artist + "(%02d:%02d)", this.length/60,this.length%60);
     }
 
 

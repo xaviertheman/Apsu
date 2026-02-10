@@ -1,6 +1,11 @@
 package csci2010.assignment1;
 
 public class Album {
+ /**
+ *CSCI 2010 assignment 1
+ * @ xavier whitlow
+ * Course: CSCI 1011 – Assignment  1
+ */
     private String title;
     private String artist;
     private Song[] tracklist;
@@ -47,9 +52,19 @@ public class Album {
 
     public void displayAlbum(){
         if(tracklist.length== 1){
-            System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "track)");
-        }else System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "tracks)");
+            System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "track)  ");
+            System.out.println();
+        }else System.out.println(this.title + " - "+ this.artist + "("+ tracklist.length+ " "+ "tracks)  ");
+        System.out.println();
         
+    }
+
+    public void displayTracklist(){
+        System.out.println("Songs List:");
+        for (int index = 0; index < tracklist.length; index++) {
+            System.out.printf("%2d. ",index+1);
+            tracklist[index].display();
+        }
     }
 
 }
