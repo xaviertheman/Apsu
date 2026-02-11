@@ -1,6 +1,6 @@
 package csci2011.WhitlowLab4;
 
-public class AbstractCommunicationDevice implements MessageSender {
+public abstract class AbstractCommunicationDevice implements MessageSender {
     private String deviceName;
 
     public AbstractCommunicationDevice(String deviceName) {
