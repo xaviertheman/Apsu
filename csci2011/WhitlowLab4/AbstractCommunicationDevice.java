@@ -1,9 +1,9 @@
 package csci2011.WhitlowLab4;
 
-public class AbstractComDevice implements MessageSender {
+public class AbstractCommunicationDevice implements MessageSender {
     private String deviceName;
 
-    public AbstractComDevice(String deviceName) {
+    public AbstractCommunicationDevice(String deviceName) {
         this.deviceName = deviceName;
     }
 
