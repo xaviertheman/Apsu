@@ -1,4 +1,4 @@
-package csci2010.classes.day02I10I26.part2;
+package day02I10I26.part2;
 
 public class Shapebasics implements ShapeInterface {
     private int offest;

@@ -1,4 +1,4 @@
-package csci2010.classes.day02I10I26.part1;
+package day02I10I26.part1;
 
 public class Circle implements mearsurable {
     private double radius;
