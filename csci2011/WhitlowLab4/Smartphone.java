@@ -1,6 +1,6 @@
 package csci2011.WhitlowLab4;
 
-public class Smartphone extends AbstractCommunicationDevice {
+public abstract class Smartphone extends AbstractCommunicationDevice {
     private int batteryLevel;
 
     public Smartphone(String deviceName, int batteryLevel) {
