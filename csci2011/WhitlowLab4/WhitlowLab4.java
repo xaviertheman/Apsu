@@ -1,6 +1,11 @@
 package csci2011.WhitlowLab4;
 
 public class WhitlowLab4 {
+/**
+ *CSCI 2011 Lab 4
+ * @ xavier whitlow
+ * Course: CSCI 2011 – Lab  4
+ */
     public static void main(String[] args) {
         AndriodPhone phone = new AndriodPhone("Samsung Galaxy", 69);
         phone.sendMessage("Alice", "Lunch today at 12");
