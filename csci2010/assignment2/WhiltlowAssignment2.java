@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class WhiltlowAssignment2 {
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
+        String answer;
         System.out.println("Welcome to Xavier Whitlow's cipher program!");
-        String answer= "Y";
         do {
             System.out.println("Do you want to [E]ncrypt or [D]ecrypt?");
             String choice1 = kb.next();
@@ -63,7 +63,7 @@ public class WhiltlowAssignment2 {
                     break;
             }
         System.out.println("Do you want to continue (Y/N)?");
-        answer = kb.nextLine();
-        } while (answer.toLowerCase()!= "n");
+        answer = kb.next();
+        } while (answer.toLowerCase() == "y");
     }
 }
