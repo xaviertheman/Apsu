@@ -37,7 +37,7 @@ public abstract class SubsitutionCipher implements Cipher{
         }
         for (char c : upper) {
             if (c == ch) {
-                return ch - 'M';
+                return ch - 'A';
             }
         }
         return -1;
