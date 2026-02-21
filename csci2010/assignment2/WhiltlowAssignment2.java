@@ -64,6 +64,6 @@ public class WhiltlowAssignment2 {
             }
         System.out.println("Do you want to continue (Y/N)?");
         answer = kb.next();
-        } while (answer.toLowerCase() == "y");
+        } while (answer.toLowerCase().equals("y"));
     }
 }
