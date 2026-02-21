@@ -2,7 +2,7 @@ package csci2010.assignment1;
 
 public class Album {
  /**
- *CSCI 2010 assignment 1
+ *CSCI 2010 assignment 2
  * @ xavier whitlow
  * Course: CSCI 1011 – Assignment  1
  */

@@ -1,6 +1,11 @@
 package csci2010.assignment2;
 
 public class ShiftCiper extends SubsitutionCipher {
+ /**
+ *CSCI 2010 assignment 2
+ * @ xavier whitlow
+ * Course: CSCI 1010 – Assignment  2
+ */
     private int key;
 
     public ShiftCiper(int key) {

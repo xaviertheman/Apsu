@@ -1,6 +1,11 @@
 package csci2010.assignment2;
 
 public abstract class SubsitutionCipher implements Cipher{
+ /**
+ *CSCI 2010 assignment 2
+ * @ xavier whitlow
+ * Course: CSCI 1010 – Assignment  2
+ */
     
     public abstract String encryptChar(char plainChar);
 

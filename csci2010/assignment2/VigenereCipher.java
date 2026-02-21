@@ -1,6 +1,11 @@
 package csci2010.assignment2;
 
 public class VigenereCipher extends SubsitutionCipher{
+ /**
+ *CSCI 2010 assignment 2
+ * @ xavier whitlow
+ * Course: CSCI 1010 – Assignment  2
+ */
     private String keyword;
     private int kwPos;
 

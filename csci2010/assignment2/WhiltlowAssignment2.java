@@ -3,6 +3,11 @@ package csci2010.assignment2;
 import java.util.Scanner;
 
 public class WhiltlowAssignment2 {
+ /**
+ *CSCI 2010 assignment 2
+ * @ xavier whitlow
+ * Course: CSCI 1010 – Assignment  2
+ */
     public static void main(String[] args) {
         Scanner kb = new Scanner(System.in);
         String answer;
