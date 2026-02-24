@@ -16,9 +16,8 @@ public class ArraySearcher {
         
         
         if (first > last){
-            result = -1;
-        }
-        else {
+            result = 0;
+        }else {
             int mid = (first + last)/2;
             if (target == a[mid]) {
                 result = mid;
@@ -27,11 +26,11 @@ public class ArraySearcher {
             }else {
                 result = binarysearch(target, mid+1, last);
             }
-        
-        return result;
         }
+        return result;
     }
-
+    
+       
     
     
 }
