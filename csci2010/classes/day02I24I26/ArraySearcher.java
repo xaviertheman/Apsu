@@ -14,15 +14,19 @@ public class ArraySearcher {
     private int binarysearch(int target, int first, int last){
         int result = -1;
         
-        int mid = first + last/2;
-        if
-        if (a[mid]==target) {
-           result = mid;
-        }else if (a[mid]> target) {
-            result = binarysearch(target, first, mid-1);
-        }else if (a[mid] < target) {
-            result = binarysearch(target, mid+1, last);
+        
+        if (first > last){
+            result = -1;
         }
+        else {
+            int mid = (first + last)/2;
+            if (target == a[mid]) {
+                result = mid;
+            }else if (a[mid]> target) {
+                result = binarysearch(target, first, mid-1);
+            }else if (a[mid] < target) {
+                result = binarysearch(target, mid+1, last);
+            }
         
         return result;
     }
