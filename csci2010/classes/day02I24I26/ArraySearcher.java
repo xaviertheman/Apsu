@@ -12,7 +12,7 @@ public class ArraySearcher {
    } 
 
     private int binarysearch(int target, int first, int last){
-        int result = -1;
+        int result;
         
         
         if (first > last){
@@ -24,11 +24,12 @@ public class ArraySearcher {
                 result = mid;
             }else if (a[mid]> target) {
                 result = binarysearch(target, first, mid-1);
-            }else if (a[mid] < target) {
+            }else {
                 result = binarysearch(target, mid+1, last);
             }
         
         return result;
+        }
     }
 
     
