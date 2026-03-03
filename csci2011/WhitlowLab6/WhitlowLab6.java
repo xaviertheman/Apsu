@@ -80,9 +80,9 @@ public class WhitlowLab6 {
         int j = last;
        
         do {
-           while (array[i]<pivot) {
+           while (array[i]<pivot&&i<j) {
             i++;
-           }while (array[j]>pivot) {
+           }while (array[j]>pivot&&j>i) {
             j--;
            }   
             displayArray(array);
@@ -92,9 +92,23 @@ public class WhitlowLab6 {
         return j;
 
     }
+
+    private static void quicksort(int[] array, int first, int last){
+        if (first > last) {
+            
+        }else{
+            int num = partition(array, array[first], first, last);
+            quicksort(array, first, num-1);
+            quicksort(array, num+1, last);
+        }
+    }
+
+    public static void quicksort(int[] array){
+        quicksort(array,0,array.length -1);
+    }
     
     public static void main(String[] args) {
-        int[] array = {99,68,24,93,98,55};
+        int[] array = {77,11,99,68,24,93,98,55};
         displayArray(array);
         System.out.println("Calling displayReverse(\"Hello World!\")");
         displayReverse("Hello World!");
@@ -103,7 +117,8 @@ public class WhitlowLab6 {
         int[] array2 = {3,6,11,14,19,23,28,33,37};
         System.out.println("Calling binarySearch to search for 14");
         //System.out.println(binaraySearch(array2, 14));
-        System.out.println(partition(array,60,0,5));
+        //partition(array, 77, 0, array.length-1);
+        quicksort(array);
 
 
 
