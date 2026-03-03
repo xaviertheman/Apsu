@@ -1,8 +1,13 @@
 package csci2011.WhitlowLab6;
 
-import csci2010.assignment1.playlist;
-
 public class WhitlowLab6 {
+
+/**
+ *CSCI 2011 Lab 6
+ * @ xavier whitlow
+ * Course: CSCI 2011 – Lab  6
+ */
+
     private static void displayArray(int[] array, int index){
         if (index == array.length) {
             System.out.println();
@@ -78,7 +83,6 @@ public class WhitlowLab6 {
     private static int partition(int[] array, int pivot, int first, int last){
         int i = first;
         int j = last;
-       
         do {
            while (array[i]<pivot&&i<j) {
             i++;
@@ -116,12 +120,9 @@ public class WhitlowLab6 {
         System.out.println(factorial(5));
         int[] array2 = {3,6,11,14,19,23,28,33,37};
         System.out.println("Calling binarySearch to search for 14");
-        //System.out.println(binaraySearch(array2, 14));
-        //partition(array, 77, 0, array.length-1);
+        System.out.println(binaraySearch(array2, 14));
+        partition(array, 77, 0, array.length-1);
         quicksort(array);
-
-
-
     }
 
 }
