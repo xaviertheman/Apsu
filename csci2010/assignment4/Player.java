@@ -1,6 +1,11 @@
 package csci2010.assignment4;
 
 public class Player {
+ /**
+ *CSCI 2010 assignment 4
+ * @ xavier whitlow
+ * Course: CSCI 1010 – Assignment  4
+ */
     private String name;
     private int age;
     private int rank;
@@ -47,6 +52,6 @@ public class Player {
     
     public String toString() {
         
-        return "Name: "+ name+"\nAge: "+age+"\nRank: "+rank+"\n Country: "+homeCountry;
+        return "\nName: "+ name+"\nAge: "+age+"\nRank: "+rank+"\nCountry: "+homeCountry;
     }
 }
